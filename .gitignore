@@ -1,0 +1,36 @@
+# Python cache & environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.env
+
+# Testing & Cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Database & Vector Index
+*.db
+*.sqlite3
+schemesaathi.db
+data/processed/faiss_index
+
+# Node / React Dependencies & Build Output
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.dist/
+.vite/
+.astro/
+
+# IDE & OS Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

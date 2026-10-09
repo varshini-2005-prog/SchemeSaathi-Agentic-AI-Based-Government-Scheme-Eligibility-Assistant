@@ -1,0 +1,70 @@
+{
+  "scheme_id": "TN_SCH_003",
+  "scheme_name": "Kalaignar Magalir Urimai Thittam (KMUT)",
+  "scheme_category": "Women Welfare / Social Assistance",
+  "government_level": "State",
+  "state": "Tamil Nadu",
+  "description": "Rights-based monthly financial assistance scheme for female heads of eligible families in Tamil Nadu.",
+  "benefits": "₹1,000 per month financial grant deposited directly into bank accounts.",
+  "eligibility_rules": [
+    {
+      "rule_id": "KMUT_R1",
+      "field": "gender",
+      "operator": "equals",
+      "target_value": "female",
+      "description": "Applicant must be a female head of family",
+      "source": "G.O. (Ms) No. 49, Special Programme Implementation Department, TN"
+    },
+    {
+      "rule_id": "KMUT_R2",
+      "field": "age",
+      "operator": "greater_than_or_equal",
+      "target_value": 21,
+      "description": "Applicant must be at least 21 years of age",
+      "source": "KMUT Official Guidelines 2023"
+    },
+    {
+      "rule_id": "KMUT_R3",
+      "field": "annual_family_income",
+      "operator": "less_than_or_equal",
+      "target_value": 250000,
+      "description": "Annual family income must not exceed ₹2,50,000",
+      "source": "G.O. (Ms) No. 49, Section 4(i), Special Programme Implementation Dept"
+    },
+    {
+      "rule_id": "KMUT_R4",
+      "field": "annual_electricity_units",
+      "operator": "less_than",
+      "target_value": 3600,
+      "description": "Annual household electricity consumption must be under 3,600 units",
+      "source": "KMUT Official Guidelines Section 4(ii)"
+    },
+    {
+      "rule_id": "KMUT_R5",
+      "field": "wet_land_acres",
+      "operator": "less_than",
+      "target_value": 5,
+      "description": "Family land holding must be less than 5 acres of wet land OR less than 10 acres of dry land",
+      "source": "KMUT Official Guidelines Section 4(iii)"
+    },
+    {
+      "rule_id": "KMUT_R6",
+      "field": "four_wheeler_ownership",
+      "operator": "equals",
+      "target_value": false,
+      "description": "Family must not own a four-wheeler (car, jeep, or light motor vehicle)",
+      "source": "KMUT Official Exclusion Criteria"
+    }
+  ],
+  "required_documents": [
+    "Aadhaar Card",
+    "Tamil Nadu Smart Family Card (Ration Card)",
+    "Electricity Bill / Consumer Account Number",
+    "Bank Account Details (Aadhaar Linked)",
+    "Income Declaration Certificate"
+  ],
+  "application_method": "Special application camps organized at local e-Sevai centers and ward/village offices across Tamil Nadu.",
+  "official_url": "https://kmut.tn.gov.in",
+  "source_document": "G.O. (Ms) No. 49 Special Programme Implementation Dept, Govt of Tamil Nadu",
+  "last_verified_date": "2024-07-20"
+}

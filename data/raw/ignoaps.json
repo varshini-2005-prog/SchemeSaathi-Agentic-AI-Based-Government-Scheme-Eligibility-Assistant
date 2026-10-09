@@ -1,0 +1,38 @@
+{
+  "scheme_id": "CENT_SCH_002",
+  "scheme_name": "Indira Gandhi National Old Age Pension Scheme (IGNOAPS / TN OAP)",
+  "scheme_category": "Pension / Social Welfare",
+  "government_level": "Central-State Joint",
+  "state": "Tamil Nadu & All India",
+  "description": "Social security pension scheme providing financial security to elderly destitute citizens belonging to Below Poverty Line (BPL) households.",
+  "benefits": "Monthly pension of ₹1,000 per month deposited directly into the beneficiary's bank account.",
+  "eligibility_rules": [
+    {
+      "rule_id": "IGNOAPS_R1",
+      "field": "age",
+      "operator": "greater_than_or_equal",
+      "target_value": 60,
+      "description": "Applicant must be 60 years of age or older",
+      "source": "National Social Assistance Programme (NSAP) Guidelines, Ministry of Rural Development"
+    },
+    {
+      "rule_id": "IGNOAPS_R2",
+      "field": "is_bpl_or_destitute",
+      "operator": "equals",
+      "target_value": true,
+      "description": "Applicant must belong to a Below Poverty Line (BPL) household or be a destitute person with no regular means of financial support",
+      "source": "TN Revenue Department Social Security Pension G.O."
+    }
+  ],
+  "required_documents": [
+    "Aadhaar Card",
+    "Age Proof (Birth Certificate / Voter ID / Aadhaar / Medical Board Certificate)",
+    "BPL Card / Income & Destitute Certificate issued by Tahsildar",
+    "Bank Passbook details",
+    "Passport size Photograph"
+  ],
+  "application_method": "Application submitted at local e-Sevai Center or Tahsildar Office (Social Security Scheme Wing) in Tamil Nadu.",
+  "official_url": "https://nsap.nic.in",
+  "source_document": "Ministry of Rural Development NSAP Guidelines & TN Revenue Dept Guidelines",
+  "last_verified_date": "2024-05-15"
+}

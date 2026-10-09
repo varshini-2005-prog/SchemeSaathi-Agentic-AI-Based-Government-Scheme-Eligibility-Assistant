@@ -1,0 +1,54 @@
+{
+  "scheme_id": "TN_SCH_002",
+  "scheme_name": "Tamizh Pudhalvan Scheme",
+  "scheme_category": "Student Scholarship / Social Welfare",
+  "government_level": "State",
+  "state": "Tamil Nadu",
+  "description": "Financial assistance scheme by the Government of Tamil Nadu for male students from government schools pursuing higher education.",
+  "benefits": "₹1,000 per month deposited directly into bank accounts to support purchasing books, study materials, and educational expenses.",
+  "eligibility_rules": [
+    {
+      "rule_id": "TAMIZH_R1",
+      "field": "gender",
+      "operator": "equals",
+      "target_value": "male",
+      "description": "Applicant must be male",
+      "source": "Tamil Nadu Higher Education Department Announcement 2024"
+    },
+    {
+      "rule_id": "TAMIZH_R2",
+      "field": "education_status",
+      "operator": "in",
+      "target_value": ["pursuing_higher_education", "enrolled_ug", "enrolled_diploma", "enrolled_iti"],
+      "description": "Must be enrolled in recognized higher education courses (UG Degree, Diploma, ITI)",
+      "source": "Tamil Nadu Government Higher Education Guidelines"
+    },
+    {
+      "rule_id": "TAMIZH_R3",
+      "field": "govt_school_study_class_6_to_12",
+      "operator": "equals",
+      "target_value": true,
+      "description": "Must have studied from Class 6 to Class 12 in Tamil Nadu Government Schools",
+      "source": "Tamil Nadu Higher Education Portal Guidelines"
+    },
+    {
+      "rule_id": "TAMIZH_R4",
+      "field": "state_residence",
+      "operator": "equals",
+      "target_value": "Tamil Nadu",
+      "description": "Applicant must be a resident of Tamil Nadu",
+      "source": "Tamil Nadu State Government Portal"
+    }
+  ],
+  "required_documents": [
+    "Aadhaar Card",
+    "Class 10th and 12th Marksheets / School TC showing Govt School attendance from Class 6 to 12",
+    "College Bonafide Certificate / Admission ID Card",
+    "Bank Passbook copy (Aadhaar Seeded Account)",
+    "Passport size Photograph"
+  ],
+  "application_method": "Online registration via official Tamil Nadu Higher Education Portal through respective colleges/universities.",
+  "official_url": "https://www.tn.gov.in",
+  "source_document": "Tamil Nadu Higher Education Department Budget Announcement 2024",
+  "last_verified_date": "2024-08-15"
+}

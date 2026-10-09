@@ -1,0 +1,54 @@
+{
+  "scheme_id": "TN_SCH_001",
+  "scheme_name": "Pudhumai Penn Scheme (Moovalur Ramamirtham Ammiyar Higher Education Assurance Scheme)",
+  "scheme_category": "Women Welfare / Student Scholarship",
+  "government_level": "State",
+  "state": "Tamil Nadu",
+  "description": "Financial assistance scheme by the Government of Tamil Nadu to encourage female students from government schools to pursue higher education.",
+  "benefits": "₹1,000 per month paid directly into the bank account until the completion of Undergraduate Degree, Diploma, ITI, or professional course.",
+  "eligibility_rules": [
+    {
+      "rule_id": "PUDHUMAI_R1",
+      "field": "gender",
+      "operator": "equals",
+      "target_value": "female",
+      "description": "Applicant must be female",
+      "source": "G.O. (Ms) No. 18, Social Welfare & Women Empowerment Dept, TN"
+    },
+    {
+      "rule_id": "PUDHUMAI_R2",
+      "field": "education_status",
+      "operator": "in",
+      "target_value": ["pursuing_higher_education", "enrolled_ug", "enrolled_diploma", "enrolled_iti"],
+      "description": "Must be currently enrolled in higher education (UG Degree, Diploma, or ITI)",
+      "source": "G.O. (Ms) No. 18, Social Welfare & Women Empowerment Dept, TN"
+    },
+    {
+      "rule_id": "PUDHUMAI_R3",
+      "field": "govt_school_study_class_6_to_12",
+      "operator": "equals",
+      "target_value": true,
+      "description": "Must have studied from Class 6 to Class 12 in Tamil Nadu Government Schools",
+      "source": "Official Guidelines - Pen Kalvi Portal (penkalvi.tn.gov.in)"
+    },
+    {
+      "rule_id": "PUDHUMAI_R4",
+      "field": "state_residence",
+      "operator": "equals",
+      "target_value": "Tamil Nadu",
+      "description": "Applicant must be a resident of Tamil Nadu",
+      "source": "Tamil Nadu Social Welfare Portal"
+    }
+  ],
+  "required_documents": [
+    "Aadhaar Card",
+    "School Transfer Certificate (Class 6 to 12 proof in TN Govt School)",
+    "College Admission Bonafide Certificate",
+    "Bank Account Details (Aadhaar Seeded)",
+    "Passport Size Photograph"
+  ],
+  "application_method": "Online application via Pen Kalvi Portal (penkalvi.tn.gov.in) through the applicant's higher education institution.",
+  "official_url": "https://penkalvi.tn.gov.in",
+  "source_document": "Tamil Nadu Social Welfare and Women Empowerment Department Notification 2022",
+  "last_verified_date": "2024-09-01"
+}

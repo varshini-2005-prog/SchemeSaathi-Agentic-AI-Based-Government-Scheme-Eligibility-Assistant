@@ -1,0 +1,106 @@
+[
+  {
+    "id": "EVAL_001",
+    "language": "en",
+    "user_message": "I am a 20 year old female student from Coimbatore. I studied in Tamil Nadu Govt school from Class 6 to 12. My family annual income is 1.8 lakh.",
+    "profile": {
+      "age": 20,
+      "gender": "female",
+      "district": "Coimbatore",
+      "annual_family_income": 180000.0,
+      "occupation": "student",
+      "education_status": "pursuing_higher_education",
+      "govt_school_study_class_6_to_12": true,
+      "four_wheeler_ownership": false,
+      "annual_electricity_units": 2000,
+      "wet_land_acres": 1.0,
+      "is_bpl_or_destitute": false
+    },
+    "expected_eligible_schemes": ["TN_SCH_001", "TN_SCH_003", "TN_SCH_004"],
+    "expected_not_eligible_schemes": ["TN_SCH_002", "CENT_SCH_001", "CENT_SCH_002"]
+  },
+  {
+    "id": "EVAL_002",
+    "language": "ta-en",
+    "user_message": "Enakku 22 age male student. TN govt school-la Class 6 to 12 padithen. Income 1.5 lakh.",
+    "profile": {
+      "age": 22,
+      "gender": "male",
+      "annual_family_income": 150000.0,
+      "occupation": "student",
+      "education_status": "pursuing_higher_education",
+      "govt_school_study_class_6_to_12": true,
+      "four_wheeler_ownership": false,
+      "annual_electricity_units": 1500,
+      "wet_land_acres": 0.0,
+      "is_bpl_or_destitute": false
+    },
+    "expected_eligible_schemes": ["TN_SCH_002"],
+    "expected_not_eligible_schemes": ["TN_SCH_001", "TN_SCH_003", "CENT_SCH_001", "CENT_SCH_002"]
+  },
+  {
+    "id": "EVAL_003",
+    "language": "ta",
+    "user_message": "எனக்கு வயது 45, பெண். என் குடும்ப ஆண்டு வருமானம் 1.8 லட்சம். நிலம் 2 ஏக்கர். நான்கு சக்கர வாகனம் இல்லை.",
+    "profile": {
+      "age": 45,
+      "gender": "female",
+      "annual_family_income": 180000.0,
+      "wet_land_acres": 2.0,
+      "four_wheeler_ownership": false,
+      "annual_electricity_units": 2000,
+      "govt_school_study_class_6_to_12": false,
+      "is_bpl_or_destitute": false
+    },
+    "expected_eligible_schemes": ["TN_SCH_003"],
+    "expected_not_eligible_schemes": ["TN_SCH_001", "TN_SCH_002", "CENT_SCH_002"]
+  },
+  {
+    "id": "EVAL_004",
+    "language": "en",
+    "user_message": "I am a 40 year old farmer owning 3 acres of agricultural land. I do not pay income tax.",
+    "profile": {
+      "age": 40,
+      "gender": "male",
+      "occupation": "farmer",
+      "land_ownership": true,
+      "is_institutional_landholder": false,
+      "is_income_tax_payer": false,
+      "annual_family_income": 150000.0,
+      "govt_school_study_class_6_to_12": false,
+      "is_bpl_or_destitute": false
+    },
+    "expected_eligible_schemes": ["CENT_SCH_001"],
+    "expected_not_eligible_schemes": ["TN_SCH_001", "TN_SCH_002", "CENT_SCH_002"]
+  },
+  {
+    "id": "EVAL_005",
+    "language": "en",
+    "user_message": "I am a 65 year old senior citizen with a BPL card.",
+    "profile": {
+      "age": 65,
+      "gender": "female",
+      "is_bpl_or_destitute": true,
+      "annual_family_income": 50000.0,
+      "govt_school_study_class_6_to_12": false
+    },
+    "expected_eligible_schemes": ["CENT_SCH_002"],
+    "expected_not_eligible_schemes": ["TN_SCH_001", "TN_SCH_002"]
+  },
+  {
+    "id": "EVAL_006",
+    "language": "ta-en",
+    "user_message": "Enakku 24 age. Income 3.5 lakh. Naan KMUT-kku eligible-aa?",
+    "profile": {
+      "age": 24,
+      "gender": "female",
+      "annual_family_income": 350000.0,
+      "four_wheeler_ownership": false,
+      "annual_electricity_units": 2000,
+      "wet_land_acres": 0.0,
+      "govt_school_study_class_6_to_12": false
+    },
+    "expected_eligible_schemes": [],
+    "expected_not_eligible_schemes": ["TN_SCH_003", "TN_SCH_001", "TN_SCH_002"]
+  }
+]

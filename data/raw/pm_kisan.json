@@ -1,0 +1,53 @@
+{
+  "scheme_id": "CENT_SCH_001",
+  "scheme_name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+  "scheme_category": "Farmer Support",
+  "government_level": "Central",
+  "state": "All India",
+  "description": "Central Sector scheme providing income support to all landholding farmers' families across the country.",
+  "benefits": "Financial benefit of ₹6,000 per year paid in three equal quarterly installments of ₹2,000 directly into Aadhaar-seeded bank accounts.",
+  "eligibility_rules": [
+    {
+      "rule_id": "PMKISAN_R1",
+      "field": "occupation",
+      "operator": "equals",
+      "target_value": "farmer",
+      "description": "Applicant or family member must be a landholding farmer",
+      "source": "PM-KISAN Operational Guidelines, Ministry of Agriculture & Farmers Welfare"
+    },
+    {
+      "rule_id": "PMKISAN_R2",
+      "field": "land_ownership",
+      "operator": "equals",
+      "target_value": true,
+      "description": "Must own cultivable agricultural land as per revenue records",
+      "source": "PM-KISAN Scheme Guidelines Section 2.1"
+    },
+    {
+      "rule_id": "PMKISAN_R3",
+      "field": "is_institutional_landholder",
+      "operator": "equals",
+      "target_value": false,
+      "description": "Institutional landholders are excluded from the scheme",
+      "source": "PM-KISAN Exclusion Criteria Section 3(a)"
+    },
+    {
+      "rule_id": "PMKISAN_R4",
+      "field": "is_income_tax_payer",
+      "operator": "equals",
+      "target_value": false,
+      "description": "Persons who paid Income Tax in the last assessment year are excluded",
+      "source": "PM-KISAN Exclusion Criteria Section 3(f)"
+    }
+  ],
+  "required_documents": [
+    "Aadhaar Card",
+    "Land Ownership Documents (Patta / Chitta / Land Revenue Record)",
+    "Savings Bank Account Details",
+    "Active Mobile Number (Aadhaar linked)"
+  ],
+  "application_method": "Self-registration via PM-KISAN Portal (pmkisan.gov.in), PM-KISAN Mobile App, or through Common Service Centers (CSCs).",
+  "official_url": "https://pmkisan.gov.in",
+  "source_document": "Ministry of Agriculture & Farmers Welfare PM-KISAN Revised Operational Guidelines",
+  "last_verified_date": "2024-07-01"
+}
