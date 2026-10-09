@@ -1,4 +1,4 @@
-# SchemeSaathi — Agentic Government Scheme Eligibility Assistant 🏛️✨
+# SchemeSaathi — Agentic Government Scheme Eligibility Assistant 
 
 **SchemeSaathi (திட்டம் சாதி)** is an Agentic AI civic technology platform designed to help citizens discover Tamil Nadu and Central Government welfare schemes they qualify for.
 
@@ -6,7 +6,7 @@ Unlike generic chatbot wrappers that rely on LLM text generation to guess eligib
 
 ---
 
-## 🌟 Key Differentiating Features
+##  Key Differentiating Features
 
 - **🤖 Stateful LangGraph Agent Workflow:** Connects specialized nodes (Input NLU Processor, Adaptive Interviewer, Deterministic Rule Evaluator, Source Verifier, Document Agent, What-If Simulator, and Response Generator).
 - **🎯 Adaptive Interviewer:** Asks *only* the minimum follow-up questions required by active candidate schemes. Skips irrelevant questions (e.g., skips agricultural land questions for student candidates).
